@@ -1,2 +1,0 @@
-http://www.somenote.cn:1602/list1
-http://www.somenote.cn:1602/list2

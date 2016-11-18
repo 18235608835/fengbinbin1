@@ -32,7 +32,18 @@ module.exports = function (grunt) {
     yeoman: appConfig,
 
     // Watches files for changes and runs tasks based on the changed files
+    less: {
+      development: {
+        files: {
+          'app/styles/fbb.css': 'app/styles/fbb.less'
+        }
+      }
+    },
     watch: {
+      less:{
+        files: ['app/styles/fbb.less'],
+        tasks: ['less']
+      },
       bower: {
         files: ['bower.json'],
         tasks: ['wiredep']
@@ -438,7 +449,8 @@ module.exports = function (grunt) {
       'concurrent:server',
       'postcss:server',
       'connect:livereload',
-      'watch'
+      'watch',
+      'less'
     ]);
   });
 

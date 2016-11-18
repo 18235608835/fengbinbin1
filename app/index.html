@@ -13,13 +13,18 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/fbb.css">
     <!-- endbuild -->
   </head>
   <body ng-app="1512App">
-    <div ui-sref="list1" class="list1">信息一</div>
-    <div ui-sref="list2" class="list2">信息二</div>
-    <div ui-view></div>
-    
+       
+
+
+
+        <div ng-controller="con">
+           <fbb b="1" data='data' data2="data2"></fbb>
+           <fbb b="1" data1 = "data1" data2="data2"></auto>
+        </div>
 
 
 
@@ -37,6 +42,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/a.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/list1.js"></script>
         <script src="scripts/controllers/list2.js"></script>
